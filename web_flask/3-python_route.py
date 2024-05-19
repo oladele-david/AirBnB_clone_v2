@@ -1,20 +1,22 @@
 #!/usr/bin/python3
-""""Module to start a Flask web application"""
+""""Module to start a Flask web application
+"""
 
 from flask import Flask
-
 app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
 def home():
-    """Function to return a string"""
+    """Function to return a string
+    """
     return "Hello HBNB!"
 
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
-    """Function to return a string"""
+    """Function to return a string
+    """
     return "HBNB"
 
 
@@ -25,7 +27,8 @@ def c_is_fun(text):
     return "C {}".format(text.replace("_", " "))
 
 
-@app.route('/python/', strict_slashes=False)
+@app.route('/python/')
+@app.route('/python/<text>', strict_slashes=False)
 def python_is_cool(text="is cool"):
     """Function to return a string
     """
