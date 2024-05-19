@@ -11,6 +11,7 @@ def home():
     """Function to return a string"""
     return "Hello HBNB!"
 
+
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
     """Function to return a string"""
