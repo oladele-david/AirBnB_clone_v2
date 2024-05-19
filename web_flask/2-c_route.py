@@ -20,7 +20,8 @@ def hbnb():
 
 @app.route('/c/<text>', strict_slashes=False)
 def c_is_fun(text):
-    """Function to return a string c followed by the value of the text variable"""
+    """Function to return a string
+    """
     return "C {}".format(text.replace("_", " "))
 
 
